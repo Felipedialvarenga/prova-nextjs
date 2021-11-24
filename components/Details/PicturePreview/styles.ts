@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image"
 
 export const Container = styled.div<{chosed: boolean, onClick: (picNumber:number) => void}>`
 width: max(12vw,120px);
@@ -18,7 +19,7 @@ transition: transform .2s linear;
   }
 `;
 
-export const CarPicture = styled.img`
+export const CarPicture = styled(Image)`
   width: max(15vw,150px);
 
   @media(max-width: 550px){

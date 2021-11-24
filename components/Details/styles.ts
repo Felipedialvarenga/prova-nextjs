@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const ContentContainer = styled.div`
   margin: 1vh 5vw;
@@ -75,7 +76,7 @@ export const CatalogButtonWrapper = styled.div`
   align-items: center;
 `;
 
-export const CarPicture = styled.img`
+export const CarPicture = styled(Image)`
   width: max(42vw, 500px);
 
   @media(max-width: 530px){

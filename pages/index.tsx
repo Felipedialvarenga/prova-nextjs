@@ -24,7 +24,7 @@ const Catalog: NextPage = ({carsList}: InferGetStaticPropsType<typeof getStaticP
   },[dispatch]);
 
   const carClickHandler = (carModel: string) => {
-    router.push(`/details/${carModel}`);
+    router.push(`/${carModel}`);
   }
 
   return (
