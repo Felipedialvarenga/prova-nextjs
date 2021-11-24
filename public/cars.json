@@ -1,0 +1,169 @@
+{
+  "cars": [
+    {
+      "model": "California",
+      "brand": "Ferrari",
+      "logo": "https://cutewallpaper.org/21/logotipo-ferrari/Ferrari-GES-Logo-Vector-Download-Free-in-this-post-we-.png",
+      "catalogPicture": "https://media.discordapp.net/attachments/597489801536733204/907971572403433492/Mask_Group_11.png?width=195&height=86",
+      "price": 725,
+      "detailPictures": [
+        {
+          "color": "red",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908415576328794133/PNG-FerrariCALIFORNIARED.png?width=716&height=317"
+        },
+        {
+          "color": "white",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908412399999139890/PNG-FerrariWhite.png?width=716&height=317"
+        }
+      ]
+    },
+    {
+      "model": "911 TURBO S",
+      "brand": "Porsche",
+      "logo": "https://i.pinimg.com/originals/c5/ab/f7/c5abf7171304dbd039cea30558833fbd.png",
+      "catalogPicture": "https://media.discordapp.net/attachments/597489801536733204/907971567370268682/Mask_Group_6.png?width=197&height=87",
+      "price": 725,
+      "detailPictures": [
+        {
+          "color": "white",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908397831642046525/PNG-Porsche911White.png?width=716&height=316"
+        },
+        {
+          "color": "black",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908397838923346010/PNG-Porsche911Black.png?width=716&height=316"
+        },
+        {
+          "color": "silver",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908397842664665148/PNG-Porsche911Silver.png?width=716&height=317"
+        }
+      ]
+    },
+    {
+      "model": "Wraith",
+      "brand": "Rolls Royce",
+      "logo": "https://marcas-logos.net/wp-content/uploads/2020/03/Rolls-Royce-Logo-1998.png",
+      "catalogPicture": "https://media.discordapp.net/attachments/597489801536733204/907971565835149382/NoPath_-_Copia_18.png?width=213&height=87",
+      "price": 725,
+      "detailPictures": [
+        {
+          "color": "red",
+          "pic": "https://snipstock.com/assets/cdn/png/bac35b17a2d7c6043fc25f1c00c7d69c.png"
+        }
+      ]
+    },
+    {
+      "model": "911 GT3 RS",
+      "brand": "Porsche",
+      "logo": "https://i.pinimg.com/originals/c5/ab/f7/c5abf7171304dbd039cea30558833fbd.png",
+      "catalogPicture": "https://www.stuttgartporsche.com.br/images/db/modelo/911-GT3-RS.png",
+      "price": 825,
+      "detailPictures": [
+        {
+          "color": "orange",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908414932066922567/PNG-PorscheGT3-Orange.png?width=716&height=317"
+        },
+        {
+          "color": "white",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908414929420296303/PNG-PorscheGT3.png?width=716&height=317"
+        },
+        {
+          "color": "silver",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908414926375223317/PNG-PorscheGT3Silver.png?width=716&height=317"
+        }
+      ]
+    },
+    {
+      "model": "Continental GT",
+      "brand": "Bentley",
+      "logo": "https://pngimg.com/uploads/bentley/bentley_PNG36.png",
+      "catalogPicture": "https://media.discordapp.net/attachments/597489801536733204/907971569362558976/Mask_Group_8.png?width=219&height=83",
+      "price": 825,
+      "detailPictures": [
+        {
+          "color": "blue",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908366086385307738/PNG-BentleyBlue.png?width=716&height=317"
+        },
+        {
+          "color": "red",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908366088318902312/PNG-BentleyRed.png?width=716&height=317"
+        },
+        {
+          "color": "silver",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908366077346586654/PNG-BentleySilver.png?width=716&height=317"
+        }
+      ]
+    },
+    {
+      "model": "4C Spider",
+      "brand": "Alfa Romeo",
+      "logo": "https://marcas-logos.net/wp-content/uploads/2020/01/Alfa-Romeo-Logo.png",
+      "catalogPicture": "https://media.discordapp.net/attachments/597489801536733204/907971571287740457/Mask_Group_10.png?width=216&height=83",
+      "price": 825,
+      "detailPictures": [
+        {
+          "color": "yellow",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908363967779471401/PNG-AlfaRomeo-Yellow.png?width=716&height=317"
+        },
+        {
+          "color": "white",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908363180651188274/PNG-AlfaRomeoWhite.png?width=716&height=317"
+        },
+        {
+          "color": "red",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908363176029081620/PNG-AlfaRomeoRed.png?width=716&height=317"
+        }
+      ]
+    },
+    {
+      "model": "Aventador",
+      "brand": "Lamborghini",
+      "logo": "https://marcas-logos.net/wp-content/uploads/2020/01/Lamborghini-logo.png",
+      "catalogPicture": "https://media.discordapp.net/attachments/597489801536733204/907971562743922698/NoPath_-_Copia_14.png?width=218&height=74",
+      "price": 925,
+      "detailPictures": [
+        {
+          "color": "orange",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908400225578803200/PNG-LamborghiniOrange.png?width=716&height=317"
+        },
+        {
+          "color": "yellow",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908400224245014570/PNG-LamborghiniYellow.png?width=716&height=317"
+        },
+        {
+          "color": "white",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908400227852107837/PNG-LamborghiniWhite.png?width=716&height=317"
+        }
+      ]
+    },
+    {
+      "model": "Veyron Spyder",
+      "brand": "Bugatti",
+      "logo": "https://http2.mlstatic.com/D_NQ_NP_756586-MLB28974058762_122018-O.jpg",
+      "catalogPicture": "https://media.discordapp.net/attachments/597489801536733204/907971574429282334/NoPath_-_Copia_13.png?width=213&height=74",
+      "price": 925,
+      "detailPictures": [
+        {
+          "color": "blue",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908368844924534814/PNG-Bugatti.png?width=716&height=317"
+        }
+      ]
+    },
+    {
+      "model": "Corvette",
+      "brand": "Chevrolet",
+      "logo": "https://cdn.freelogovectors.net/svg05/corvette-logo.svg",
+      "catalogPicture": "https://media.discordapp.net/attachments/597489801536733204/907970948718805052/Mask_Group_7.png?width=203&height=84",
+      "price": 925,
+      "detailPictures": [
+        {
+          "color": "white",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908367365954228274/PNG-CorvetteWhite.png?width=716&height=317"
+        },
+        {
+          "color": "red",
+          "pic": "https://media.discordapp.net/attachments/597489801536733204/908367368143650867/PNG-CorvetteRed.png?width=716&height=317"
+        }
+      ]
+    }
+  ]
+}
