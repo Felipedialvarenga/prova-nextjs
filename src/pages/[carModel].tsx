@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
-import { RootState } from "store";
-//import { GetStaticProps, GetStaticPaths, InferGetStaticPropsType } from "next";
+import { GetStaticProps, GetStaticPaths, InferGetStaticPropsType } from "next";
+import Head from "next/head";
 
 import {
   ArrowButton,
@@ -23,20 +22,16 @@ import {
   CarouselButton,
   PicturesWrapper,
   PicturePreview,
-} from "components";
-import { iChosedPictureInfo } from "shared/interfaces";
+} from "src/components";
+import { iChosedPictureInfo } from "src/shared/interfaces";
 import { ArrowRight, ArrowLeft } from "@styled-icons/bootstrap";
 
-import { iCarData, iDetailPictures } from "shared/interfaces";
-const data = require("../public/cars.json");
+import { iCarData, iDetailPictures } from "src/shared/interfaces";
+const data = require("public/cars.json");
 
-const Details: React.FC = () => {
+const Details: React.FC = ({chosedCar}: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [chosedPictureIdx, setChosedPictureIdx] = useState(0);
   const router = useRouter();
-  const carModel = router.query.carModel;
-  const carsData = useSelector((state: RootState) => state.cars.cars);
-  const chosedCarArr = carsData.filter(car => car.model === carModel);
-  const chosedCar = chosedCarArr[0];
 
   const chosedPicture: iChosedPictureInfo = {
     picture: chosedCar.detailPictures[chosedPictureIdx].pic,
@@ -94,6 +89,10 @@ const Details: React.FC = () => {
 
   return (
     <React.Fragment>
+      <Head>
+        <title>{chosedCar.model}</title>
+        <meta name="description" content={`Show the details of the ${chosedCar.brand} ${chosedCar.model}`}/>
+      </Head>
       <Header />
       <ContentContainer>
         <PageTopContent>
@@ -168,33 +167,31 @@ const Details: React.FC = () => {
   );
 };
 
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const carModels = data.cars.map((car: iCarData) => car.model);
-//   const someCarModels = carModels.filter((model: string, idx: number) => idx < 3)
-//   console.log(someCarModels)
+export const getStaticPaths: GetStaticPaths = async () => {
+  const carModels = data.cars.map((car: iCarData) => car.model);
 
-//   return {
-//     paths: someCarModels.map((model: string) => ({ params: { carModel: model } })),
-//     fallback: true,
-//   };
-// };
+  return {
+    paths: carModels.map((model: string) => ({ params: { carModel: model } })),
+    fallback: 'blocking',
+  };
+};
 
-// export const getStaticProps: GetStaticProps = async (context) => {
-//   const carModel = context.params!.carModel;
+export const getStaticProps: GetStaticProps = async (context) => {
+  const carModel = context.params!.carModel;
 
-//   let chosedCar;
+  let chosedCar;
 
-//   data.cars.forEach((car: iCarData) => {
-//     if (car.model === carModel) {
-//       chosedCar = car;
-//     }
-//   });
+  data.cars.forEach((car: iCarData) => {
+    if (car.model === carModel) {
+      chosedCar = car;
+    }
+  });
 
-//   return {
-//     props: {
-//       chosedCar,
-//     },
-//   };
-// };
+  return {
+    props: {
+      chosedCar,
+    },
+  };
+};
 
 export default Details;

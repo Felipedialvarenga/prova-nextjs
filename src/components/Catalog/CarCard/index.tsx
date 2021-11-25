@@ -1,6 +1,6 @@
 import React from "react";
 import { CardContainer, TopCard, CarBrand, CarModel, Dots, GreyDot, CarImg, CarPrice, PriceText } from "./styles";
-import { iCarCard } from "shared/interfaces";
+import { iCarCard } from "src/shared/interfaces";
 
 export const CarCard: React.FC<iCarCard> = (props) => {
     return (

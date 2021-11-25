@@ -8,11 +8,16 @@ export const ButtonContainer = styled.div<{backgroundColor: string, textColor: s
   background-color: ${props => props.backgroundColor};
   color: ${props => props.textColor};
   border: 1px solid ${props => props.textColor};
-  font: normal normal 300 16px/21px Segoe UI;
+  font: bold bold 300 16px/21px Segoe UI;
   border-radius: 25px;
   height: 50px;
   min-width: 177px;
   cursor: pointer;
+  transition: transform .2s linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const StyledArrowRight = styled(ArrowRight)`

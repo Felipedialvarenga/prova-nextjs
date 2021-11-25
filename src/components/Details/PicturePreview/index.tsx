@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, CarPicture } from "./styles";
-import { iPicturePreviewProps } from "shared/interfaces";
+import { iPicturePreviewProps } from "src/shared/interfaces";
 
 export const PicturePreview: React.FC<iPicturePreviewProps> = (props) => {
     const chosed = props.isChosen(props.picNumber);
